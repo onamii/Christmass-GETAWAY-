@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Getaway 2024</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 50%, #0f2818 100%);
+            color: #fff; min-height: 100vh; overflow-x: hidden;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; position: relative; z-index: 2; }
+        h1 { font-size: 4em; color: #ffd700; letter-spacing: 3px; text-shadow: 3px 3px 6px rgba(0,0,0,.5); }
+        .subtitle { font-size: 1.5em; color: #f0e6d2; font-style: italic; }
+        .tagline { color: #ffb347; margin-top: 15px; }
+        header { text-align: center; padding: 40px 20px; }
+        .countdown-section {
+            background: rgba(255,255,255,.1); backdrop-filter: blur(10px);
+            border-radius: 20px; padding: 40px; margin: 30px 0;
+            border: 2px solid rgba(255,215,0,.3);
+        }
+        .countdown { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 20px; }
+        .countdown-item {
+            background: rgba(255,215,0,.2); padding: 25px; border-radius: 15px;
+            min-width: 120px; text-align: center; border: 2px solid rgba(255,215,0,.5);
+        }
+        .countdown-number { font-size: 3em; font-weight: bold; color: #ffd700; }
+        .countdown-label { color: #f0e6d2; }
+        .programme { margin-top: 40px; }
+        .day-card {
+            background: rgba(255,255,255,.15); backdrop-filter: blur(10px);
+            border-radius: 15px; padding: 30px; margin: 25px 0;
+            border-left: 5px solid #ffd700;
+        }
+        .day-title { font-size: 2em; color: #ffd700; margin-bottom: 15px; }
+        .day-theme { font-size: .6em; color: #ffb347; font-style: italic; }
+        .activity-list { list-style: none; margin-top: 20px; }
+        .activity-list li { padding: 10px 0 10px 30px; position: relative; color: #f0e6d2; }
+        .activity-list li:before { content: '🎁'; position: absolute; left: 0; }
+        .funny-note {
+            background: rgba(255,179,71,.2); padding: 12px 20px; border-radius: 10px;
+            margin-top: 15px; color: #ffb347; font-style: italic;
+        }
+        footer { text-align: center; padding: 40px 20px; color: #f0e6d2; }
+        @media (max-width: 768px) { h1 { font-size: 2.5em; } }
+    
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            z-index: 1;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.2em;
+            pointer-events: none;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            to { transform: translateY(110vh); }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>🎄 Christmas Getaway 🎄</h1>
+<p class="subtitle"> Adulting Takes a Holiday Break</p>
+</header>
+
+<div class="countdown-section">
+<h2 style="text-align:center;color:#ffd700;">⏰ Countdown!!⏰</h2>
+<p style="text-align:center;color:#f0e6d2;">December 24th @ 19:04</p>
+<div class="countdown" id="countdown">
+<div class="countdown-item"><div class="countdown-number" id="days">00</div><div class="countdown-label">Days</div></div>
+<div class="countdown-item"><div class="countdown-number" id="hours">00</div><div class="countdown-label">Hours</div></div>
+<div class="countdown-item"><div class="countdown-number" id="minutes">00</div><div class="countdown-label">Minutes</div></div>
+<div class="countdown-item"><div class="countdown-number" id="seconds">00</div><div class="countdown-label">Seconds</div></div>
+</div>
+</div>
+
+<div class="programme">
+<h2 style="text-align:center;color:#ffd700;">✨ The Master Plan ✨</h2>
+
+<div class="day-card">
+<div class="day-title">🚂 Day 1 – Dec 24 <span class="day-theme">Operation: Escape Warsaw</span></div>
+<ul class="activity-list">
+<li>Departure from Warsaw – 19:04 (don’t test the train, Aubaine please!!)</li>
+<li>Arrival & check‑in</li>
+<li>Light dinner & Christmas set‑up</li>
+<li>Goodnight (tomorrow is chaos)</li>
+</ul>
+<div class="funny-note">Pack your Christmas PJs. This is not optional. Wale wa shorts na vests.. eeeh!! Ngori!! </div>
+</div>
+
+<div class="day-card">
+<div class="day-title">🎅 Day 2 – Christmas Day <span class="day-theme">Christmas PJs Mandatory</span></div>
+<ul class="activity-list">
+<li>Brunch at 11‑ish (Ata nyinyi mnajua hamtaamka mapema..)</li>
+<li>Arts & crafts – reconnect with your inner child</li>
+<li>Games (friendships may be tested)</li>
+<li>Dinner prep & feast</li>
+<li>10‑minute PowerPoints (yes, We want to know how 2025 was to you.. WE CARE ABOUT YOU.)</li>
+<li>Midnight gift exchange 🎁(Some of us budget ilikuwa tight.. oops!) </li>
+</ul>
+</div>
+
+<div class="day-card">
+<div class="day-title">❄️ Day 3 – Dec 26 <span class="day-theme">WE OUTSIDE!!</span></div>
+<ul class="activity-list">
+<li>Brunch</li>
+<li>Gingerbread factory & Old Town sightseeing</li>
+<li>Christmas market </li>
+<li>Dinner & games round two</li>
+</ul>
+</div>
+
+<div class="day-card">
+<div class="day-title">👋 Day 4 – Dec 27 <span class="day-theme">Back to Reality (Sadly)</span></div>
+<ul class="activity-list">
+<li>Departures</li>
+<li>Return to Warsaw (emotionally unavailable)</li>
+</ul>
+</div>
+</div>
+
+<footer>
+<p style="font-size:1.3em;color:#ffd700;">See you on the train 🎄🚂</p>
+</footer>
+</div>
+
+<script>
+// 🎄 COUNTDOWN — SAME LOGIC AS ORIGINAL FIRST VERSION
+// Countdown target: December 24th at 19:00
+const targetDate = new Date(new Date().getFullYear(), 11, 24, 19, 0, 0);
+
+function updateCountdown() {
+  const now = new Date();
+  const diff = targetDate - now;
+
+  if (diff <= 0) {
+    document.getElementById('countdown').innerHTML = "<h2 style='color:#ffd700;text-align:center;'>🎉 IT'S TIME! LET THE CHRISTMAS CHAOS BEGIN 🎉</h2>";
+    return;
+  }
+
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((diff / (1000 * 60)) % 60);
+  const seconds = Math.floor((diff / 1000) % 60);
+
+  document.getElementById('days').textContent = days;
+  document.getElementById('hours').textContent = hours;
+  document.getElementById('minutes').textContent = minutes;
+  document.getElementById('seconds').textContent = seconds;
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+<script>
+// ❄️ Snowflake generator
+function createSnowflake() {
+  const snowflake = document.createElement('div');
+  snowflake.className = 'snowflake';
+  snowflake.innerHTML = '❄';
+  snowflake.style.left = Math.random() * 100 + 'vw';
+  snowflake.style.animationDuration = Math.random() * 4 + 6 + 's';
+  snowflake.style.opacity = Math.random();
+  snowflake.style.fontSize = Math.random() * 1 + 0.6 + 'em';
+  document.body.appendChild(snowflake);
+
+  setTimeout(() => snowflake.remove(), 10000);
+}
+setInterval(createSnowflake, 250);
+</script>
+
+</body>
+</html>
